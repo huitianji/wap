@@ -1,0 +1,44 @@
+// Name: Tag
+//
+// Description: bid tag style
+//
+// ============================================================================
+
+.tag{
+  border-radius:0.08rem;
+  padding:0.09rem;
+  position: relative;
+  &.orange{
+    background-color:$global-orange;
+    color: $white;
+  }
+  &.green{
+    background-color:$global-green;
+    color: $white;
+  }
+  &.yellow{
+    background-color:$global-yellow;
+    color: $white;
+  }
+  &.orange-light{
+    background-color:$global-orange-light;
+    color: $white;
+  }
+  &.gray{
+    background-color:$border-dark;
+    color: $white;
+  }
+  .tag-arrow{
+    position: absolute;
+    top: 0.17rem;
+    left: -0.32rem;
+    border-width: 0.12rem 0.2rem 0.12rem 0.2rem;
+    border-style: dashed solid dashed dashed;
+    &.orange-light{
+      border-color: transparent $global-orange-light transparent transparent;
+    }
+    &.gray{
+      border-color: transparent $border-dark transparent transparent;
+    }
+  }
+}

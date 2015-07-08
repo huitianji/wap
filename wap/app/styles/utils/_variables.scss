@@ -1,0 +1,93 @@
+// Name: Variables
+//
+// Description:Define all variables
+//
+// ============================================================================
+
+// Global variables
+// =============================================================================
+
+// desigh unit
+// a为基准单位,由设计稿宽度除以100所得.r为rem的实际像素值.
+// -----------------------------------------------------------------------------
+
+$a: (750/100);
+$r: ($a * 10);
+
+// Black - White - Gray
+// -----------------------------------------------------------------------------
+
+$black:#000;
+$white: #fff;
+$text-normal: #333;
+$text-light: #666;
+$text-lighter: #999;
+$gray: #f7f7f7;
+$gray-dark: #dbdbdb;
+$gray-darker: #c2c2c2;
+
+// Brand Colors
+// -----------------------------------------------------------------------------
+
+$global-main: #53a0e3;
+$global-main-light: #84c1ee;
+$global-main-lighter: #b7d7f3;
+$global-orange: #ee5930;
+$global-orange-light: #ff6803;
+$global-orange-lighter: #ffcba9;
+$global-green: #77b716;
+$global-green-light: #98d359;
+$global-green-lighter: #c5e297;
+$global-yellow: #ffb324;
+$global-yellow-light: #ffce54;
+$global-yellow-lighter: #ffe296;
+
+// Links
+// -----------------------------------------------------------------------------
+
+$link-color: #006ac7;
+
+// Borders
+// -----------------------------------------------------------------------------
+
+$border-dark: #dedede;
+$border-light: #ececec;
+$border-radius: (12/$r) * 1rem;
+
+// Font-size
+// -----------------------------------------------------------------------------
+$font-num-xl: (120/$r) * 1rem;
+$font-num-lg: (68/$r) * 1rem;
+$font-num-md: (48/$r) * 1rem;
+$font: (28/$r) * 1rem;
+$font-sm: (26/$r) * 1rem;
+$font-xs: (24/$r) * 1rem;
+$font-md: (28/$r) * 1rem;
+$font-lg: (30/$r) * 1rem;
+$font-xl: (36/$r) * 1rem;
+$font-xxl: (40/$r) * 1rem;
+
+// Padding & Margin
+// -----------------------------------------------------------------------------
+$padding-xs: (10/$r) * 1rem;
+$padding-sm: (15/$r) * 1rem;
+$padding-md: (20/$r) * 1rem;
+$padding-base: (30/$r) * 1rem;
+$padding-lg: (40/$r) * 1rem;
+$padding-xl: (50/$r) * 1rem;
+$margin-xs: (10/$r) * 1rem;
+$margin-sm: (15/$r) * 1rem;
+$margin-md: (20/$r) * 1rem;
+$margin-base: (30/$r) * 1rem;
+$margin-lg: (40/$r) * 1rem;
+$margin-xl: (50/$r) * 1rem;
+
+// Button Color
+// -----------------------------------------------------------------------------
+//$button-default-active: #4f98d8;
+$button-default-active: #3e8acd;
+$button-default-disable: #b7d7f3;
+$button-second-active: #edf5fc;
+$button-second-disable: #ececec;
+$button-third-active: #cdcdcd;
+$button-third-disable: #dedede;

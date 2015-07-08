@@ -1,0 +1,14 @@
+// Name: Link
+//
+// Description: global tag <a>
+//
+// ============================================================================
+
+a{
+  color: $link-color;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $link-color;
+  }
+}

@@ -1,0 +1,278 @@
+// Name: Page wechat
+//
+// Description: wechat styles
+//
+// ============================================================================
+
+.wechat-login{
+  padding: $padding-base;
+  .logo{
+    width: 4.13rem;
+    margin-bottom: $margin-md;
+  }
+}
+.wechat-login-disable{
+  background-color: $white;
+  border-bottom: 1px $border-dark solid;
+  text-align: center;
+  .wechat-login-name{
+    padding-top: 1rem;
+    font-size: $font-num-md;
+    margin: 0;
+  }
+  .wechat-mark{
+    font-size: $font-xs;
+    color: $global-yellow;
+    margin:0;
+    padding-top: $padding-md;
+    padding-bottom: 1.25rem;
+    .icon-vip{
+      @include size(0.33rem,0.24rem);
+      display: inline-block;
+      margin-right: $margin-xs;
+      background: url('https://static.souyidai.com/wap/2.0/images/vip@2x.png') no-repeat;
+      background-size: contain;
+    }
+  }
+}
+.wechat-index-silde{
+  overflow: hidden;
+  margin-top: (70/$r) * 1rem;
+  padding: 0 $padding-base;
+  height: 6.6rem;
+  .wechat-index-card{
+    border-radius: $border-radius;
+    background-color: $white;
+    border: 1px $border-dark solid;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 6.6rem;
+    overflow: hidden;
+    .wechat-bid-rate{
+      color: $global-orange-light;
+      font-size: $font-sm;
+      margin-top: $margin-xl;
+      line-height: 1.2;
+      span{
+        font-size: (81/$r) * 1rem;
+        font-weight: bold;
+      }
+    }
+    .wechat-bid-time{
+      border-radius: $border-radius;
+      background-color: $global-main-light;
+      font-size: $font-xs;
+      padding: $padding-xs $padding-sm;
+      color: $white;
+      &.pre{
+        background-color: $global-main-lighter;
+      }
+      &.end{
+        background-color: $gray-dark;
+      }
+    }
+    .wechat-bid-info{
+      margin-top: $margin-lg;
+      display: flex;
+      p{
+        flex: 1;
+        margin: 0;
+        font-size: $font-sm;
+        color: $text-lighter;
+        span{
+          font-size: $font-xl;
+          color: $text-normal;
+        }
+        &:not(:first-child){
+          border-left: 1px $border-light solid;
+        }
+      }
+    }
+    .wechat-bid-footer{
+      position: absolute;
+      color: $text-light;
+      bottom: 0;
+      border-top: 1px $border-light solid;
+      background-color: $gray;
+      width: 100%;
+      font-size: $font-sm;
+      padding: $padding-sm 0;
+    }
+    .wechat-card-corner{
+      position: absolute;
+      background-color: $global-green;
+      color: $white;
+      font-size: $font-xs;
+      padding: $padding-xs 0;
+      line-height: 1;
+      width: 3rem;
+      top: 0.3rem;
+      left: -0.9rem;
+      margin: 0;
+      transform: rotate(-45deg);
+      &.end{
+        background-color: $gray-dark;
+      }
+    }
+    .wechat-has-invest{
+      position: absolute;
+      right: 0.3rem;
+      top: 0.3rem;
+      border: 1px $border-dark solid;
+      border-radius: 50%;
+      @include size((160/$r) * 1rem);
+      overflow: hidden;
+      span{
+        font-size: $font-xl;
+        color: $gray-darker;
+        display: inline-block;
+        margin-top: 0.65rem;
+        border-top: 1px $border-dark solid;
+        border-bottom: 1px $border-dark solid;
+        width: 100%;
+        transform: rotate(-30deg);
+      }
+    }
+    .wechat-bid-tag{
+      position: absolute;
+      left: 0;
+      top: 0.3rem;
+      font-size: $font-xl;
+      background-color: $global-main;
+      color: $white;
+      padding: 0 $padding-md;
+      padding-right: 0.5rem;
+      &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0rem;
+        border-width: 0.37rem 0.25rem 0.37rem 0.2rem;
+        border-style: dashed solid dashed dashed;
+        border-color: transparent $white transparent transparent;
+      }
+    }
+  }
+}
+.slide-dot{
+  margin-top: $margin-base;
+  text-align: center;
+  span{
+    display: inline-block;
+    @include size((10/$r) * 1rem);
+    background-color: $gray-darker;
+    margin-left: $margin-xs;
+    border-radius: 50%;
+    &.cur{
+      background-color: $global-orange-light;
+    }
+  }
+}
+.wechat-balance{
+  text-align: center;
+  font-size: $font-xs;
+  margin-top: $margin-xl;
+  margin-bottom: 0;
+}
+.wechat-coupon-tip{
+  @include center();
+  text-align: center;
+  font-size: $font-sm;
+  padding: $padding-md $padding-lg;
+  color: $global-orange-light;
+  background-color: #feece0;
+  border-radius: $border-radius;
+  width: 6.3rem;
+  margin-top: $margin-lg;
+  margin-bottom: $margin-xs;
+  .coupon-tip-triangle{
+    display: block;
+    @include size(0.37rem);
+    margin: 0 auto;
+    margin-bottom: -$margin-base;
+    background-color: #feece0;
+    transform: rotate(45deg);
+  }
+}
+.wechat-id5-tip{
+  background-color: $white;
+  padding: $padding-base;
+  border-bottom: 1px $border-dark solid;
+  .icon-tip-blue{
+    margin-top: 1.2rem;
+  }
+  .id5-tip-text{
+    text-align: center;
+    font-size: $font-xxl;
+    margin-bottom: $margin-xl;
+  }
+  .id5-tip-progress{
+    @include center();
+    width: 5.2rem;
+    margin-bottom: 1.1rem;
+  }
+}
+.wechat-share{
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url('../images/wechat/share_back@2x.jpg');
+  background-color: #fffef6;
+  .wechat-share-banner{
+    width: 8.16rem;
+    position: absolute;
+    z-index: 2;
+    top: 5.9rem;
+    left: 1.2rem;
+  }
+  .wechat-share-header-img{
+    border-radius: $border-radius;
+    @include size((60/75) * 1rem);
+    position: absolute;
+    top: 0.4rem;
+    left: 0.4rem;
+  }
+  .wechat-share-name{
+    position: absolute;
+    left: 1.5rem;
+    top: 0;
+    font-size: $font-xs;
+    color: #b7d7f3;
+    line-height: 1.2;
+    span{
+      display: inline-block;
+      font-size: $font-lg;
+      color: $white;
+      width: 4rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+  .wechat-index-silde{
+    margin-top: 7.2rem;
+  }
+  .wechat-index-card{
+    position: relative;
+    .wechat-bid-title{
+      font-size: $font-lg;
+      text-align: left;
+      padding-left: $padding-base;
+      margin-top: 0.9rem;
+    }
+    .wechat-bid-info{
+      margin-top: $margin-base;
+    }
+    p{
+      text-align: left;
+      padding-left: $padding-base;
+      &.rate{
+        color: $global-orange-light;
+        span{
+          color: $global-orange-light;
+          font-size: $font-num-lg;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}

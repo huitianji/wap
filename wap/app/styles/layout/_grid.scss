@@ -1,0 +1,17 @@
+// Name: Grid
+//
+// Description: 12cols grid
+//
+// ============================================================================
+
+.row{
+  @include clearfix;
+}
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    width: $i/12 * 100%;
+  }
+}

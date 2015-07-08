@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>提示中转页</title>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:js scripts/flexible.js -->
+  <script src="scripts/flexible.js"></script>
+  <!-- endbuild -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+<body class="wechat">
+  <div class="wechat-id5-tip">
+    <i class="icon-tip-blue"></i>
+    <p class="id5-tip-text">实名认证后即可充值投资<br>年利率9.88%的短期优质项目</p>
+    <img src="images/wechat/id5_progress@2x.png" alt="" class="id5-tip-progress">
+  </div>
+  <div class="btn-box">
+    <button class="btn btn-default">立即认证</button>
+  </div>
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/zepto/zepto.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+  <!-- build:js scripts/util.js -->
+  <script src="scripts/util.js"></script>
+  <!-- endbuild -->
+  <!-- build:js scripts/slide.js -->
+  <script src="scripts/slide.js"></script>
+  <!-- endbuild -->
+  <script>
+  $('.wechat-index-silde').swipeSlide({
+    ul: $('.wechat-index-list'),
+    li: $('.wechat-index-card'),
+    autoSwipe : false,
+    continuousScroll:true,
+    callback: function(i){
+      $('.slide-dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
+    }
+  });
+  </script>
+</body>
+</html>

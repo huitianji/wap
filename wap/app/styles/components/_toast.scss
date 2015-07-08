@@ -1,0 +1,49 @@
+// Name: Toast
+//
+// Description: Toast style
+//
+// ============================================================================
+
+.toast-warp{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+.toast{
+  padding: $padding-md $padding-base;
+  border-radius: 0.2rem;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 97;
+  max-width:80%;
+  line-height: $font-xl;
+  font-size: $font-lg;
+  color: $white;
+  display: none;
+}
+@keyframes toast-show {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes toast-hide {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+.toast-show-am {
+  animation: toast-show 0.3s forwards;
+}
+.toast-close-am {
+  animation: toast-hide 0.3s forwards;
+}

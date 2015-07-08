@@ -1,0 +1,130 @@
+// Name: Dialog
+//
+// Description: dialog styles
+//
+// ============================================================================
+
+.dialog-back {
+  position: fixed;
+  top: -5rem;
+  bottom: -5rem;
+  left: -5rem;
+  right: -5rem;
+  background-color: rgba(0,0,0,0.6);
+  display: none;
+  z-index: 98;
+}
+.dialog{
+  @include size(8.5rem, 5.7rem);
+  border-radius: 0.2rem;
+  background-color: #fcfcfc;
+  position: absolute;
+  top: 4rem;
+  left: 0.72rem;
+  z-index: 99;
+  display: none;
+  .dialog-simple{
+    min-height: 3.9rem;
+    text-align: center;
+    .dialog-simple-header{
+      margin-top: 1rem;
+      font-size: $font-xl;
+      font-weight: bold;
+    }
+    .dialog-simple-content{
+      font-size: $font-lg;
+      padding: 0 $padding-lg;
+      margin-bottom: 0;
+    }
+  }
+  .dialog-header{
+    text-align: center;
+    font-size: $font-lg;
+    font-weight: bold;
+    padding: $padding-lg 0;
+    line-height: 1;
+    span {
+      color: $global-orange;
+    }
+    border-bottom: 2px $border-light solid;
+  }
+  .dialog-content{
+    padding: $padding-xl 1.3rem 0.8rem 1.3rem;
+    line-height: 1.1;
+    min-height: 3rem;
+    p{
+      margin: 0;
+    }
+    .dialog-invest-info{
+      &:first-child{
+        font-size: $font-lg;
+        font-weight: bold;
+        margin-bottom: $margin-md;
+      }
+      &:not(:first-child){
+        color: $text-lighter;
+        font-size: $font-sm;
+      }
+    }
+  }
+  .dialog-btn-box{
+    display: flex;
+    border-top: 1px $border-dark solid;
+    .btn-dialog:first-child{
+      border-bottom-left-radius: 0.2rem;
+    }
+    .btn-dialog:not(:first-child){
+      border-left: 1px $border-dark solid;
+      border-bottom-right-radius: 0.2rem;
+    }
+    .btn-single{
+      border-bottom-left-radius: 0.2rem;
+      border-bottom-right-radius: 0.2rem;
+    }
+  }
+  .btn-dialog{
+    flex:1;
+    padding: $padding-base 0;
+    background-color: #fcfcfc;
+    display: inline-block;
+    line-height: 1;
+    border: none;
+    outline: 0;
+    font-size: $font-xl;
+    &.btn-disabled{
+      color: $gray-darker!important;
+    }
+    &.btn-default{
+      color: $link-color;
+      font-weight: bold;
+    }
+    &.btn-second{
+      color: $link-color;
+    }
+  }
+}
+@keyframes dialog-show {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes dialog-hide {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+.dialog-show-am {
+  animation: dialog-show 0.3s forwards;
+}
+.dialog-close-am {
+  animation: dialog-hide 0.3s forwards;
+}

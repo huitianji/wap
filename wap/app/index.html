@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>借款详情</title>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:js scripts/flexible.js -->
+  <script src="scripts/flexible.js"></script>
+  <!-- endbuild -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+<body>
+  <ul class="tab-view tab-list">
+    <li class="tab-active">
+      <a href="{{base.bidId}}" >借款详情</a>
+    </li>
+    <li>
+      <a href="{{base.bidId}}" >审核信息</a>
+    </li>
+    <li>
+      <a href="{{base.bidId}}" class="tab-border">投资记录</a>
+    </li>
+  </ul>
+  <div class="bid-header">
+    <p class="bid-rate">
+      <span class="bid-rate-num">12</span>% <span class="bid-rate-right">
+      <span class="tag orange-light">加息券<span class="tag-arrow orange-light"></span></span>
+      <span class="tag orange">秒杀项目</span>
+      <span class="tag orange-light">+0.5%</span>
+      <br>
+      年利率</span>
+    </p>
+    <div class="bid-progress">
+      <svg version="1.1" class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         width="100%" height="100%" viewBox="0 0 40 40"  xml:space="preserve">
+        <circle cx="20" cy="20" r="17" fill="none" stroke="#dfdfdf" stroke-width="2" id="circle"/>
+        <path d="" id="arc" fill="none" stroke="" stroke-width="2.2" data-end="360" data-start="0"/>
+      </svg>
+      <span class="percent">34%</span>
+      <span class="status">投资中</span>
+    </div>
+    <div class="bid-prop">
+      <div>{{key}}<br><span>{{value}}</span></div>
+    </div>
+  </div>
+  <div class="bid-info">
+    <div class="bid-info-list row">
+      <div class="inline col-6">可投金额<br><span>800,000.00元</span></div>
+      <div class="inline right col-6">剩余时间<br><span>03时12分56秒</span></div>
+      <div class="block col-12">可投金额<span>800,000.00元</span></div>
+    </div>
+    <div class="bid-info-items row">
+      <div class="bid-info-item col-6"><span class="icon icon-1yuan"></span>1000元起投</div>
+      <div class="bid-info-item col-6"><span class="icon icon-jinbi"></span>1000元整数倍</div>
+      <div class="bid-info-item col-6"><span class="icon icon-zhuanrang"></span>可提前赎回</div>
+      <div class="bid-info-item col-6"><span class="icon icon-jiari"></span>节假日正常还款</div>
+      <div class="bid-info-item col-6"><span class="icon icon-bili"></span>最大可投30%</div>
+    </div>
+  </div>
+  <div class="container"></div>
+  <a class="list-btn"><span class="icon icon-dun"></span>金融联贷100%本息担保<span class="icon icon-chevron-right"></span></a>
+  <a class="list-btn"><span class="icon icon-ya"></span>借款人提供房产抵押<span class="icon icon-chevron-right"></span></a>
+  <a class="list-btn"><span class="icon icon-danbao"></span>参与本息保障计划<span class="icon icon-chevron-right"></span></a>
+  <div class="bid-detail">
+    <div class="bid-detail-header">借款描述</div>
+    <div class="bid-detail-content">此借款用于购买广州市楼盘佳兆业城市广场，购买房屋面积约123平方米；借款人收入稳定，信用记录良好，有房产和车辆，有还款能力。</div>
+  </div>
+  <div class="bid-detail">
+    <div class="bid-detail-header">购房信息</div>
+    <div class="bid-detail-list">
+      <div class="detail-list-item">所在城市<span>昆明市</span></div>
+      <div class="detail-list-item">开发商全称<span>海伦堡房地产开发有限公司</span></div>
+      <div class="detail-list-item">楼盘名称<span>海伦国际</span></div>
+      <div class="detail-list-item">楼盘均价<span>100,000.00元</span></div>
+    </div>
+  </div>
+  <a class="list-btn bold">楼盘资料图<span class="icon icon-chevron-right"></span></a>
+  <div class="bid-detail">
+    <div class="bid-detail-header">购房信息</div>
+    <div class="bid-detail-list">
+      <div class="detail-list-item">基本信息<span>朱** 女 52岁</span></div>
+      <div class="detail-list-item">学历<span>本科</span></div>
+      <div class="detail-list-item">婚育情况<span>已婚已育</span></div>
+      <div class="detail-list-item">户籍地<span>湖南怀化</span></div>
+    </div>
+  </div>
+  <div class="bid-tips">
+    说明: <br>欲查看"债权匹配记录", 请您用电脑登录www.souyidai.com, button在定期宝原项目中查看详情
+  </div>
+  <div class="btn-box">
+     <button class="btn btn-default">测试</button>
+     <button class="btn btn-second">测试</button>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="123">
+    <p class="help-block">123</p>
+    <span class="input-icon"></span>
+  </div>
+  <div class="btn-box">
+    <button class="btn btn-block btn-third" id="sss">sss</button>
+  </div>
+  <div class="btn-bottom"><span class="cal"></span><div class="text">投资</div></div>
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/zepto/zepto.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+  <!-- build:js scripts/util.js -->
+  <script src="scripts/util.js"></script>
+  <!-- endbuild -->
+  <script>
+  //if ('ondevicemotion' in window) {
+  //  //alert(true);
+  //}
+  //$(window).on('devicemotion', function(event) {
+  //  $('body').append(JSON.stringify(event))
+  //});
+/*
+ * Author: Alex Gibson
+ * https://github.com/alexgibson/shake.js
+ * License: MIT license
+ */
+
+(function(global, factory) {
+    if (typeof define === 'function' && define.amd) {
+        define(function() {
+            return factory(global, global.document);
+        });
+    } else if (typeof module !== 'undefined' && module.exports) {
+        module.exports = factory(global, global.document);
+    } else {
+        global.Shake = factory(global, global.document);
+    }
+} (typeof window !== 'undefined' ? window : this, function (window, document) {
+
+    'use strict';
+
+    function Shake(options) {
+        //feature detect
+        this.hasDeviceMotion = 'ondevicemotion' in window;
+
+        this.options = {
+            threshold: 15, //default velocity threshold for shake to register
+            timeout: 1000 //default interval between events
+        };
+
+        if (typeof options === 'object') {
+            for (var i in options) {
+                if (options.hasOwnProperty(i)) {
+                    this.options[i] = options[i];
+                }
+            }
+        }
+
+        //use date to prevent multiple shakes firing
+        this.lastTime = new Date();
+
+        //accelerometer values
+        this.lastX = null;
+        this.lastY = null;
+        this.lastZ = null;
+
+        //create custom event
+        if (typeof document.CustomEvent === 'function') {
+            this.event = new document.CustomEvent('shake', {
+                bubbles: true,
+                cancelable: true
+            });
+        } else if (typeof document.createEvent === 'function') {
+            this.event = document.createEvent('Event');
+            this.event.initEvent('shake', true, true);
+        } else {
+            return false;
+        }
+    }
+
+    //reset timer values
+    Shake.prototype.reset = function () {
+        this.lastTime = new Date();
+        this.lastX = null;
+        this.lastY = null;
+        this.lastZ = null;
+    };
+
+    //start listening for devicemotion
+    Shake.prototype.start = function () {
+        this.reset();
+        if (this.hasDeviceMotion) {
+            //window.addEventListener('devicemotion', this, false);
+        }
+    };
+
+    //stop listening for devicemotion
+    Shake.prototype.stop = function () {
+        if (this.hasDeviceMotion) {
+            window.removeEventListener('devicemotion', this, false);
+        }
+        this.reset();
+    };
+
+    //calculates if shake did occur
+    Shake.prototype.devicemotion = function (e) {
+        var current = e.accelerationIncludingGravity || e;
+        var currentTime;
+        var timeDifference;
+        var deltaX = 0;
+        var deltaY = 0;
+        var deltaZ = 0;
+
+        if ((this.lastX === null) && (this.lastY === null) && (this.lastZ === null)) {
+            this.lastX = current.x;
+            this.lastY = current.y;
+            this.lastZ = current.z;
+            return;
+        }
+
+        deltaX = Math.abs(this.lastX - current.x);
+        deltaY = Math.abs(this.lastY - current.y);
+        deltaZ = Math.abs(this.lastZ - current.z);
+
+        if (((deltaX > this.options.threshold) && (deltaY > this.options.threshold)) || ((deltaX > this.options.threshold) && (deltaZ > this.options.threshold)) || ((deltaY > this.options.threshold) && (deltaZ > this.options.threshold))) {
+            //calculate time in milliseconds since last shake registered
+            currentTime = new Date();
+            timeDifference = currentTime.getTime() - this.lastTime.getTime();
+
+            if (timeDifference > this.options.timeout) {
+                window.dispatchEvent(this.event);
+                this.lastTime = new Date();
+            }
+        }
+
+        this.lastX = current.x;
+        this.lastY = current.y;
+        this.lastZ = current.z;
+
+    };
+
+    //event handler
+    Shake.prototype.handleEvent = function (e) {
+        if (typeof (this[e.type]) === 'function') {
+            return this[e.type](e);
+        }
+    };
+
+    return Shake;
+}));
+  </script>
+  <script>
+  var myShakeEvent = {};
+  window.onload = function() {
+
+    //create a new instance of shake.js.
+    myShakeEvent = new Shake();
+
+    // start listening to device motion
+    myShakeEvent.start();
+
+    // register a shake event
+    window.addEventListener('shake', shakeEventDidOccur, false);
+
+    //shake event callback
+    function shakeEventDidOccur () {
+
+        //put your own code here etc.
+        alert('Shake!');
+    }
+    alert(window.JsCommunication.isSupportAccelerometerSensor());
+};
+  $('.btn-default').on('click', function() {
+    window.JsCommunication.registerAccelerometerSensor();
+  });
+  $('.btn-second').on('click', function() {
+    window.JsCommunication.unregisterAccelerometerSensor();
+  });
+  </script>
+</body>
+</html>

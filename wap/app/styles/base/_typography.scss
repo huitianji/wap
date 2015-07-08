@@ -1,0 +1,38 @@
+// Name: Typography
+//
+// Description: global typography
+//
+// =============================================================================
+
+body{
+  color: $text-normal;
+}
+.text-small{
+  font-size: $font-xs;
+  color: $text-lighter;
+  line-height: $font-sm;
+}
+.text-strong{
+  font-weight: bold;
+}
+.pull-right{
+  float: right;
+}
+.pull-left{
+  float: left;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+.no-border-top{
+  border-top:none!important;
+}
+.no-border-bottom{
+  border-bottom:none!important;
+}

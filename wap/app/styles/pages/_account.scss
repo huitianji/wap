@@ -1,0 +1,97 @@
+// Name: Page account
+//
+// Description: account styles
+//
+// ============================================================================
+
+.account-glance{
+  padding: $padding-lg $padding-base;
+  .glance-title{
+    margin:0;
+    color: $text-lighter;
+    font-size: $font-xs;
+    .glance-num{
+      color: $text-normal;
+      font-size: $font-xl;
+    }
+    .glance-num-lg{
+      color: $text-normal;
+      font-weight: bold;
+      font-size: $font-num-md;
+    }
+    &.main-title{
+      margin-bottom: $margin-lg;
+    }
+  }
+  .glance-row{
+    display: flex;
+    margin-bottom: $margin-md;
+    > *{
+      flex: 1;
+    }
+    .glance-title:not(:first-child){
+      border-left: 1px $border-dark solid;
+      padding-left: $padding-base;
+    }
+    .glance-btn-box{
+      padding-left: $padding-base;
+      .btn{
+        width: 1.86rem;
+        font-size: $font-lg;
+        padding: $padding-sm 0;
+      }
+    }
+  }
+}
+.account-detail-empty{
+  text-align: center;
+  margin-top: 2rem;
+  .detail-empty-image {
+    width: 1.5rem;
+  }
+  .detail-empty-text{
+   color: $text-lighter;
+   font-size: $font-sm;
+   margin: 0;
+   margin-top: $margin-md;
+  }
+}
+.account-detail-item{
+  background-color:$white;
+  margin-bottom: $margin-md;
+  border-bottom:1px $border-dark solid;
+  border-top:1px $border-dark solid;
+  font-size: $font;
+  &.no-border-top{
+    border-top:none;
+  }
+  .detail-header{
+    padding: $padding-base;
+    font-size: $font-lg;
+    border-bottom:1px $border-light solid;
+    a{
+      float: right;
+      font-weight: normal;
+    }
+  }
+  .detail-list{
+    padding: $padding-lg $padding-base;
+    .list-item{
+      color: $text-lighter;
+      padding:0.08rem 0;
+    }
+  }
+  span{
+    float: right;
+    color: $text-normal;
+    &.green{
+      color: $global-green;
+    }
+    &.orange{
+      color: $global-orange-light;
+    }
+    &.gray{
+      color: $text-lighter;
+    }
+  }
+}

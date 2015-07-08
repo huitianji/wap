@@ -1,0 +1,42 @@
+// Name: Headar
+//
+// Description: header nav bar
+//
+// ============================================================================
+
+.nav{
+  height: (88/$r) * 1rem;
+  background-color: $global-main;
+  display: flex;
+  padding: 0 $padding-base;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  .icon-back{
+    @include size((50/$r)*1rem);
+    background: url('https://static.souyidai.com/wap/2.0/images/back@2x.png') no-repeat;
+    background-size: contain;
+    display: block;
+  }
+  .nav-title{
+    color: $white;
+    font-size: $font-xl;
+    line-height: 1;
+    text-align: center;
+    margin: 0;
+    span {
+      font-size: $font-xs;
+    }
+  }
+  .nav-right{
+    min-width: 0.8rem;
+  }
+  a {
+    font-size: $font-lg;
+    color: $white;
+    &:hover, &:active{
+      color: $white
+    }
+  }
+}

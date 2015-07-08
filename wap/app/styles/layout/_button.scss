@@ -1,0 +1,148 @@
+// Name: Button
+//
+// Description: button styles
+//
+// ============================================================================
+
+.btn-box{
+  display: flex;
+  padding: 0 $padding-base;
+  .btn:not(:last-child){
+    margin-right: $margin-md;
+  }
+}
+.btn {
+  display: inline-block;
+  padding: $padding-base 0;
+  margin: $margin-base 0 0 0;
+  font-size: $font-xxl;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: $border-radius;
+  transition: background-color 300ms ease-out, border-color 300ms ease-out;
+  outline: none;
+  flex: 1;
+  line-height: 1;
+  &.btn-default {
+    color: $white;
+    background-color: $global-main;
+    &:active{
+      background-color: $button-default-active;
+    }
+    &.btn-disabled {
+      background-color: $button-default-disable;
+    }
+  }
+  &.btn-second {
+    color: $global-main;
+    background-color: $white;
+    border: 1px $global-main solid;
+    &:active{
+      background-color: $button-second-active;
+    }
+    &.btn-disabled {
+      background-color: $button-second-disable;
+      color: $gray-darker;
+      border: 1px solid transparent;
+    }
+  }
+  &.btn-third {
+    color: $text-normal;
+    background-color: $gray;
+    border: 1px $border-dark solid;
+    &:active{
+      background-color: $button-third-active;
+    }
+    &.btn-disabled {
+      background-color: $button-third-disable;
+      color: $gray-darker;
+    }
+  }
+  &.btn-block{
+    display: block;
+    width: 100%;
+  }
+  &.btn-blue{//蓝色
+    color: $white;
+    background-color: $global-main;
+    &:active{
+      background-color: $button-default-active;
+    }
+    &.btn-disabled{
+      background-color: $button-default-disable;
+    }
+  }
+}
+
+.btn-bottom{
+  width: 100%;
+  height: 1.53rem;
+  position: fixed;
+  bottom: 0;
+  background-color:$global-main;
+  .text{
+    text-align: center;
+    color: $white;
+    font-size: $font-xxl;
+    height: 1.53rem;
+    line-height:1.53rem;
+    transition: background-color 300ms ease-out, border-color 300ms ease-out;
+    &:active{
+      background-color: $button-default-active;
+    }
+  }
+  .cal{
+    background: url('https://static.souyidai.com/wap/2.0/images/calculator_n@2x.png') center center no-repeat;
+    background-size: 100% auto;
+    width: 1.53rem;
+    height: 1.53rem;
+    display: none;
+    float: left;
+    transition: background 300ms ease;
+    &:active{
+      background: url('https://static.souyidai.com/wap/2.0/images/calculator_o@2x.png') center center no-repeat;
+      background-size: 100% auto;
+    }
+  }
+  .special_two_lines{//（特殊）两行文案
+    color: $white;
+    text-align: center;
+    padding: $padding-md 0px (13/$r)*1rem 0px;
+    transition: background-color 300ms ease-out, border-color 300ms ease-out;
+    &:active{
+      background-color: $button-default-active;
+    }
+    span,em{
+      display: block;
+    }
+    span{
+      font-size: $font-xxl;
+    }
+    em{
+      font-size: $font-xs;
+      font-style: normal;
+      line-height: (30/$r)*1rem;
+    }
+  }
+  .special_two_column{
+    font-size: $font-xxl;
+    display: flex;
+    align-items: center;
+    height: 1.53rem;
+    line-height:1.53rem;
+    a{
+      flex:1;
+      color: $white;
+      text-align: center;
+      transition: background-color 300ms ease-out, border-color 300ms ease-out;
+      &.border-right{
+        border-right:1px solid $global-main-light;
+      }
+      &:active{
+        background-color: $button-default-active;
+      }
+    }
+  }
+}

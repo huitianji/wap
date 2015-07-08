@@ -1,0 +1,371 @@
+.wechat-myac-xx{
+
+}
+.wechat-myac-download{
+  @include size(100%,(88/$r)*1rem);
+  padding: 0 $padding-base;
+  display: flex;
+  background-color: #f5faff;
+  border-bottom: 1px solid #ddecf9;
+  .wechat-myac-warning{
+    display: block;
+    @include size(auto,(50/$r)*1rem);
+    padding-top: (14/$r)*1rem;
+    flex:2;
+    i{
+      display:inline-block;
+      @include size((50/$r)*1rem);
+      background-image: url("../../images/wechat/warn-wechat@2x.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-right: $margin-xs;
+      float: left;
+      margin-top:(2/$r)*1rem;
+    }
+    span{
+      display: block;
+      color:$global-main;
+      font-size: $font-xs;
+      line-height: $padding-base;
+      float: left;
+    }
+  }
+  .wechat-myac-btn{
+    flex:1;
+    text-align: right;
+    button{
+      @include size(auto,(66/$r)*1rem);
+      padding:0px (46/$r)*1rem;
+      margin: $margin-xs 0 0 0;
+      font-size: $font-lg;
+    }
+  }
+}
+.wechat-myac-amount{
+  display: flex;
+  padding: 0 $padding-base;
+  @include size(100%,(204/$r)*1rem);
+  background-color: $white;
+  border-bottom:1px solid $border-dark;
+  align-items: center;
+  .wechat-myac-aside{
+    display: block;
+    flex:1;
+    span{
+      display: block;
+      text-align: center;
+    }
+    .wechat-myac-name{
+      color:$text-lighter;
+      font-size: $font-xs;
+    }
+    .wechat-myac-value{
+      color:$text-normal;
+      font-size: $font-num-md;
+      font-weight: bold;
+      em{
+        font-style: normal;
+        font-size: $font-sm;
+      }
+    }
+    &.left-line{
+      border-left:1px solid $border-dark;
+      .wechat-myac-value{
+        color:$global-orange-light;
+      }
+    }
+  }
+}
+.wechat-myac-datetit{
+  @include size(100%,(56/$r)*1rem);
+  padding: 0 $padding-base;
+  border-bottom:1px solid $border-dark;
+  background-color: $gray;
+  color:$text-lighter;
+  font-size: $font-xs;
+  line-height: (56/$r)*1rem;
+}
+.wechat-myac-module{
+  padding: 0 $padding-base (36/$r)*1rem $padding-base;
+  background-color: $white;
+  align-items: center;
+  border-bottom: 1px solid $border-dark;
+  .wechat-myac-title{
+    display: flex;
+    font-size: $font-lg;
+    padding:(36/$r)*1rem 0px $font-lg 0px;
+    i{
+      display:block;
+      font-style: normal;
+      flex:2;
+    }
+    strong{
+      display:block;
+      font-weight: normal;
+      flex:1;
+      text-align: right;
+      color:$global-green;
+      &.settled{
+        color:$gray-darker;
+      }
+    }
+
+  }
+  .wechat-myac-list{
+    font-size: $font;
+    color:$text-light;
+    span{
+      display: block;
+      padding: 0px;
+      margin: 0px;
+    }
+    i{
+      display: inline-block;
+      @include size((135/$r)*1rem,auto);
+      font-style: normal;
+    }
+    strong{
+      font-weight: normal;
+    }
+  }
+}
+//
+.wechat-myac-aslist{
+  margin-top: (70/$r) * 1rem;
+  padding: 0 $padding-base;
+  border-bottom: 1px solid $border-dark;
+  border-top: 1px solid $border-dark;
+  background-color: $white;
+  .wechat-myac-samlltit{
+    display: block;
+    @include size(100%,(88/$r)*1rem);
+    border-bottom: 1px solid $border-light;
+    line-height: (88/$r)*1rem;
+    font-size:$font-xl;
+  }
+  .wechat-myac-column{
+    border-bottom: 1px solid $border-light;
+    padding: $padding-base 0px;
+    span{
+      display: block;
+      line-height: (56/$r)*1rem;
+      em{
+        font-style: normal;
+        font-size: $font-lg;
+        color:$text-lighter
+      }
+      strong{
+        font-weight: normal;
+        float: right;
+        font-size: $font-lg;
+      }
+    }
+  }
+  .wechat-myac-total{
+    display: block;
+    padding: $padding-base 0px;
+    em{
+      font-style: normal;
+      font-size: $font-lg;
+      color:$text-lighter
+    }
+    strong{
+      font-weight: normal;
+      float: right;
+      font-size: $font-lg;
+    }
+  }
+}
+.wechat-myac-details{
+  margin-top: (70/$r) * 1rem;
+  border-top: 1px solid $border-dark;
+  background-color: $white;
+  &.bd-bottom{
+    border-bottom: 1px solid $border-dark;
+  }
+  &.pd-justify{
+    padding: 0 $padding-base;
+  }
+  &.md-top{
+    margin-top: $margin-md;
+  }
+  &.relative{
+    position: relative;
+    overflow: hidden;
+  }
+}
+.wechat-myac-row{
+  padding:$padding-base;
+  border-bottom: 1px solid $border-dark;
+  display: flex;
+  span{
+    flex:1;
+    strong{
+      display: block;
+      font-weight:  normal;
+      font-size: $font-xl;
+    }
+    em{
+      font-style: normal;
+      font-size: (22/$r)*1rem;
+      color:$text-lighter;
+    }
+    &.draw{
+      text-align: right;
+      strong{
+        color:$global-orange-light;
+      }
+    }
+    &.included{
+      text-align: right;
+      strong{
+        color:$global-green;
+      }
+    }
+  }
+}
+.wechat-myac-safecy{
+  margin-top: (70/$r) * 1rem;
+  border-top: 1px solid $border-dark;
+  border-bottom: 1px solid $border-dark;
+  background-color:$white ;
+  padding: 0 $padding-base;
+  &.margin-top{
+    margin-top: (20/$r) * 1rem;
+  }
+}
+.wechat-myac-point-ico{
+  @include size((15/$r)*1rem,(26/$r)*1rem);
+  background-image: url("../../images/wechat/arrow-wechat@2x.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.wechat-myac-safecolumn{
+//  @include size(100%,(86/$r)*1rem);
+//  line-height: (86/$r)*1rem;
+    padding: $padding-lg 0px;
+  span{
+    font-size: $font-lg;
+  }
+  .wechat-myac-approve{
+    float: right;
+    color:$gray-darker;
+    &.level{
+      color:$global-green;
+    }
+    &.level-low{
+      color:$global-orange-light;
+    }
+  }
+  &.bd-bottom{
+    border-bottom: 1px solid $border-light;
+  }
+  .wechat-myac-action{
+    float: right;
+    a{
+//      display: flex;
+//      align-items: center;
+      i{
+        display: block;
+        margin-left: (20/$r)*1rem;
+        /*2*/
+        float: right;
+        margin-top: (2/$r)*1rem;
+        /*2end*/
+      }
+      em{
+        display: block;
+        font-style: normal;
+        /*2*/
+        float: left;
+        /*2end*/
+      }
+    }
+  }
+  .wechat-myac-arrow{//测试
+    display: block;
+    @include size((20/$r)*1rem);
+    border-top:2px solid $gray-darker;
+    border-right:2px solid $gray-darker;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    float: right;
+    margin-top: (30/$r)*1rem;
+    margin-left:(15/$r)*1rem;
+  }
+
+}
+.wechat-myac-degree{
+  padding: $padding-base 0px;
+  border-bottom: 1px solid $border-light;
+  @include clearfix;
+  span{
+    display: block;
+    font-size:$font ;
+    strong{
+      display: block;
+      font-weight: normal;
+      padding-bottom:$padding-xs;
+    }
+    em{
+      display: block;
+      font-style: normal;
+      color:$global-green;
+    }
+    &.mark{
+      float: right;
+      margin-top: (25/$r)*1rem;
+    }
+  }
+  &.issue{
+    span{
+      float: left;
+      em{
+        color:$text-normal;
+      }
+    }
+    .issue-lt{
+      @include size((265/$r)*1rem,auto);
+    }
+    .rt{
+      float: right;
+    }
+    .text-lighter{
+      color:$text-lighter;
+    }
+    .text-green{
+      color:$global-green;
+    }
+  }
+}
+.wechat-myac-entry{
+  padding: $padding-base 0px;
+  span{
+    display: block;
+    font-size: $font;
+    line-height: (48/$r) * 1rem;
+    em{
+      display: block;
+      @include size((265/$r)*1rem,auto);
+      font-style: normal;
+      color:#888;
+      float: left;
+    }
+    strong{
+      font-weight: normal;
+    }
+  }
+}
+/*
+角标
+*/
+.wechat-myac-superscript{
+  position: absolute;
+  background-image: url("../../images/wechat/benqi-wechat@2x.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top:0px; left: 0px;
+  @include size((66/$r)*1rem,(64/$r)*1rem);
+}
+/*end*/
+

@@ -1,0 +1,121 @@
+// Name: Form
+//
+// Description: Form and input
+//
+// ============================================================================
+
+.form-group {
+  margin-top: $margin-md;
+  position: relative;
+  &.has-error {
+    .help-block{
+      color: $global-orange;
+    }
+    .form-control, .form-control:focus{
+      border-color: $global-orange;
+    }
+    .input-icon {
+      background-image: url('https://static.souyidai.com/wap/2.0/images/input_error@2x.png');
+    }
+  }
+  &.form-active{
+    .input-icon {
+      background-image: url('https://static.souyidai.com/wap/2.0/images/input_cancel@2x.png');
+    }
+  }
+  .form-control:focus {
+    border-color: $global-main;
+  }
+  label {
+    display: inline-block;
+    max-width: 100%;
+    font-size: $font-sm;
+    color: $text-lighter;
+  }
+  .input-icon{
+    @include size(1.1rem);
+    background-size: 0.34rem 0.34rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .help-block {
+    color: $text-light;
+    font-size: $font-xs;
+    margin: 0;
+    padding-left: $padding-md;
+  }
+}
+.form-control {
+  -webkit-appearance: none;
+  display: block;
+  width: 100%;
+  padding: $padding-md;
+  font-size: $font-lg;
+  color: $text-normal;
+  background-color: $white;
+  border: 1px solid $border-dark;
+  border-radius: $border-radius;
+  transition: border-color ease-in-out .15s;
+  outline: 0;
+  &.disabled{
+    background-color:$gray;
+    color: $gray-darker!important;
+  }
+}
+::-webkit-input-placeholder {
+  color: $gray-darker;
+}
+// .input-group {
+//   margin-top: $margin-md;
+//   position: relative;
+//   display: table;
+//   border-collapse: separate;
+//   .form-control {
+//     position: relative;
+//     z-index: 2;
+//     float: left;
+//     width: 100%;
+//     margin-bottom: 0;
+//     display: table-cell;
+//     &:first-child {
+//       border-top-right-radius: 0;
+//       border-bottom-right-radius: 0;
+//     }
+//   }
+//   .input-group-addon {
+//     padding: 6px 12px;
+//     font-size: 14px;
+//     font-weight: 400;
+//     line-height: 1;
+//     color: #555;
+//     text-align: center;
+//     background-color: #fff;
+//     border: 1px solid #ccc;
+//     border-radius: 4px;
+//     width: 1%;
+//     white-space: nowrap;
+//     vertical-align: middle;
+//     display: table-cell;
+//     border-top-left-radius: 0;
+//     border-bottom-left-radius: 0;
+//     border-left: none;
+//   }
+//   .input-group-btn {
+//     position: relative;
+//     font-size: 0;
+//     white-space: nowrap;
+//     width: 1%;
+//     vertical-align: middle;
+//     display: table-cell;
+//     border-top-left-radius: 0;
+//     border-bottom-left-radius: 0;
+//     .btn{
+//       margin: 0;
+//       border-top-left-radius: 0;
+//       border-bottom-left-radius: 0;
+//     }
+//   }
+// }

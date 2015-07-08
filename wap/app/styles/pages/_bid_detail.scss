@@ -1,0 +1,290 @@
+// Name: Page bid_detail
+//
+// Description: bid_detail styles
+//
+// ============================================================================
+
+.bid-header{
+  background-color:$white;
+  padding: 0 $padding-base;
+  padding-bottom: 0.5rem;
+  position: relative;
+  padding-top: 1.06rem;
+  border-bottom:1px $border-dark solid;
+  .bid-title{
+    position: absolute;
+    top: 0;
+    font-size: $font-sm;
+    font-weight: bold;
+    margin-top: $margin-md;
+  }
+  .bid-rate{
+    margin: 0;
+    font-size: $font-sm;
+    color: $global-orange;
+    position: relative;
+    line-height: 1;
+    .bid-rate-num{
+      font-size: $font-num-xl;
+      &.sm{
+        font-size: $font-num-lg;
+        line-height: 1.6rem;
+      }
+    }
+    .bid-rate-right{
+      display: inline-block;
+      position: relative;
+      line-height: 1.8;
+    }
+  }
+  .bid-progress{
+    position: absolute;
+    right: 0.4rem;
+    top: 0.66rem;
+    @include size(2.06rem);
+    text-align: center;
+    span{
+      position: absolute;
+      width: 100%;
+      right: 0;
+    }
+    svg {
+      #arc{
+        stroke:$global-yellow;
+      }
+      &.full #arc{
+        stroke:$global-green
+      }
+    }
+    .percent{
+      font-size: $font-lg;
+      top: 0.6rem;
+    }
+    .status{
+      font-size: $font-xs;
+      color: $text-light;
+      top: 1.05rem;
+    }
+  }
+  .bid-prop{
+    display: flex;
+    color: $text-lighter;
+    font-size: $font-sm;
+    margin-top: 0.33rem;
+    >:nth-child(1){
+      text-align: left;
+      width: 2.46rem;
+    }
+    >:nth-child(2){
+      text-align: center;
+      width: 2.72rem;
+      border-left: 1px $border-light solid;
+      border-right: 1px $border-light solid;
+    }
+    >:nth-child(3){
+      text-align: right;
+      flex:1
+    }
+    span{
+      color: $text-normal;
+      font-size: $font-lg
+    }
+  }
+}
+.bid-info{
+  background-color: $gray;
+  padding: $padding-base;
+  border-bottom:1px $border-dark solid;
+  .bid-info-list{
+    text-align: left;
+    color: $text-lighter;
+    font-size: $font-sm;
+    line-height: 1.2;
+    padding-bottom:0.15rem;
+    border-bottom: 1px $border-dark solid;
+    .inline{
+      padding-bottom:0.15rem;
+      &.right{
+        text-align: right;
+      }
+    }
+    .block{
+      padding-bottom:0.15rem;
+      span{
+        float: right;
+      }
+    }
+    span{
+      color: $text-normal;
+      font-size: $font-lg;
+    }
+    &:not(:first-child){
+      padding-top: $padding-base;
+    }
+  }
+  .bid-info-items{
+    padding-top:$padding-base;
+    color: $text-light;
+    font-size: $font;
+    .bid-info-item{
+      line-height: 1.6;
+      .icon{
+        @include size(0.4rem);
+        margin-right: $margin-xs;
+        display: inline-block;
+        vertical-align: -0.05rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        &.icon-1yuan{
+          background-image: url('https://static.souyidai.com/wap/2.0/images/1yuan@2x.png');
+        }
+        &.icon-bili{
+          background-image: url('https://static.souyidai.com/wap/2.0/images/bili@2x.png');
+        }
+        &.icon-jiari{
+          background-image: url('https://static.souyidai.com/wap/2.0/images/jiari@2x.png');
+        }
+        &.icon-jinbi{
+          background-image: url('https://static.souyidai.com/wap/2.0/images/jinbi@2x.png');
+        }
+        &.icon-zhuanrang{
+          background-image: url('https://static.souyidai.com/wap/2.0/images/zhuanrang@2x.png');
+        }
+        &.icon-qixiri{
+          background-image: url('https://static.souyidai.com/wap/2.0/images/qixiri@2x.png');
+        }
+        &.icon-sui{
+          background-image: url('https://static.souyidai.com/wap/2.0/images/sui@2x.png');
+        }
+        &.icon-t{
+          background-image: url('https://static.souyidai.com/wap/2.0/images/t@2x.png');
+        }
+        &.icon-bei{
+          background-image: url('https://static.souyidai.com/wap/2.0/images/bei@2x.png');
+        }
+      }
+    }
+  }
+}
+.list-btn{
+  background-color:$white;
+  border-bottom:1px $border-dark solid;
+  display: block;
+  padding: $padding-base;
+  font-size: $font-lg;
+  color: #333333;
+  &.single{
+    margin-top: $margin-md;
+    border-top:1px $border-dark solid;
+  }
+  .icon{
+    @include size(0.67rem);
+    margin-right: $margin-xs;
+    display: inline-block;
+    vertical-align: -0.18rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    &.icon-dun{
+      background-image: url('https://static.souyidai.com/wap/2.0/images/bao_icon@2x.png');
+    }
+    &.icon-danbao{
+      background-image: url('https://static.souyidai.com/wap/2.0/images/danbao_icon@2x.png');
+    }
+    &.icon-ya{
+      background-image: url('https://static.souyidai.com/wap/2.0/images/ya_icon@2x.png');
+    }
+    &.icon-xieyi{
+      background-image: url('https://static.souyidai.com/wap/2.0/images/xieyi_icon@2x.png');
+    }
+    &.icon-shouquan{
+      background-image: url('https://static.souyidai.com/wap/2.0/images/shouquan_icon@2x.png');
+    }
+    &.icon-repay{
+      background-image: url('https://static.souyidai.com/wap/2.0/images/repayment_icon@2x.png');
+    }
+    &.icon-chevron-right{
+      width: 0.2rem;
+      background: url('https://static.souyidai.com/wap/2.0/images/chevon_right@2x.png') center center no-repeat;
+      float: right;
+      margin-right:0;
+      background-size: contain;
+      transition: all 0.3s ease;
+      &.up{
+        transform: rotate(-90deg);
+      }
+      &.down{
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+.bid-detail{
+  background-color:$white;
+  margin-top: $margin-md;
+  border-bottom:1px $border-dark solid;
+  border-top:1px $border-dark solid;
+  font-size: $font;
+  &.no-border-top{
+    border-top:none;
+  }
+  .bid-detail-header{
+    padding: $padding-base;
+    font-weight: bold;
+    border-bottom:1px $border-light solid;
+    a{
+      float: right;
+      font-weight: normal;
+    }
+  }
+  .bid-detail-content{
+    padding: $padding-lg $padding-base;
+    .content-title{
+      margin: 0;
+      margin-bottom: $margin-xs;
+      &:not(:first-child){
+        margin-top: $margin-base;
+      }
+    }
+    .content-text{
+      margin: 0;
+      color: $text-light
+    }
+  }
+  .bid-detail-list{
+    padding: $padding-lg $padding-base;
+    .detail-list-item{
+      color: $text-lighter;
+      padding:0.08rem 0;
+      span{
+        float: right;
+        color: $text-normal;
+        &.green{
+          color: $global-green;
+        }
+        &.orange{
+          color: $global-orange-light;
+        }
+        &.gray{
+          color: $text-lighter;
+        }
+      }
+    }
+  }
+  .bid-detail-column{
+    padding: $padding-lg $padding-base;
+    .detail-column-line{
+      display: flex;
+      .column-left{
+        width: 1.83rem;
+      }
+      .column-right{
+        flex: 1;
+      }
+    }
+  }
+}
+.bid-tips{
+  padding: $padding-base;
+  color: $text-lighter;
+  font-size: $font-xs;
+}

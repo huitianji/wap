@@ -1,0 +1,32 @@
+// Name: Mixins
+//
+// Description:Utilities
+//
+// ============================================================================
+
+/// Helper to clear inner floats
+/// @author Nicolas Gallagher
+/// @link http://nicolasgallagher.com/micro-clearfix-hack/ Micro Clearfix
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+/// Helper to size an element
+/// @author Hugo Giraudel
+/// @param {Length} $width
+/// @param {Length} $height
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+/// Helper to center display a block element
+@mixin center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,157 @@
+// Name: Page bid_verify
+//
+// Description: bid_verify styles
+//
+// ============================================================================
+
+.bid-audit-header{
+  padding: $padding-base;
+  font-size: $font-md;
+  font-weight: bold;
+  .icon{
+    position: relative;
+    top: -0.07rem;
+  }
+}
+.bid-audit-content {
+  background-color:$white;
+  padding: $padding-lg $padding-base;
+  border-bottom:1px $border-dark solid;
+  margin-bottom: $margin-md;
+  font-size: $font-md;
+}
+.bid-audit-list{
+  margin: 0;
+  padding-left:1rem;
+  font-size: $font-lg;
+  border-bottom:1px $border-dark solid;
+  li{
+    padding:0.3rem 0;
+    border-top:1px $border-light solid;
+    &:first-child{
+      border-top:none;
+    }
+  }
+  .icon{
+    display: inline-block;
+    @include size(0.41rem);
+    position: relative;
+    top: 0.1rem;
+    margin-right: $margin-base;
+    &.icon-check{
+      background: url('https://static.souyidai.com/wap/2.0/images/check@2x.png') center center no-repeat;
+      background-size: contain;
+      float: right;
+    }
+  }
+  .audit-list-tip{
+    margin:0;
+    padding-top: $padding-md;
+    padding-bottom: $padding-md;
+    margin-left: -0.6rem;
+    padding-right:$padding-base;
+    font-size: $font-xs;
+    color: $global-orange;
+    border-top:1px $border-light solid;
+  }
+}
+.bid-audit-panel{
+  .bid-rose-graph{
+    background-color: $white;
+    border-bottom:1px $border-dark solid;
+    .rose-graph-svg{
+      @include size(7.73rem);
+      margin: 0 auto;
+      padding:$padding-base 0;
+      position: relative;
+      .graph-tag{
+        position: absolute;
+        color: $white;
+        font-size: $font-sm;
+        line-height:1.1;
+        text-align: center;
+        display: none;
+        span{
+          font-size: 0.6rem;
+        }
+        &.tag-1{
+          top: 1.85rem;
+          left: 4rem;
+        }
+        &.tag-2{
+          top: 4rem;
+          left: 5rem;
+        }
+        &.tag-3{
+          top: 5.3rem;
+          left: 3.1rem;
+        }
+        &.tag-4{
+          top: 4rem;
+          left: 1.35rem;
+        }
+        &.tag-5{
+          top: 1.85rem;
+          left: 2.4rem;
+        }
+      }
+      .rose-graph-title{
+        position: absolute;
+        top: 3.8rem;
+        width: 100%;
+        text-align: center;
+      }
+      .rose-graph-star{
+        position: absolute;
+        top: 3.4rem;
+        width: 100%;
+        text-align: center;
+        .star{
+          @include size(0.35rem);
+          display: inline-block;
+          &.star-full{
+            background: url('https://static.souyidai.com/wap/2.0/images/star_full@2x.png') center center no-repeat;
+            background-size: contain;
+          }
+          &.star-half{
+            background: url('https://static.souyidai.com/wap/2.0/images/star_half@2x.png') center center no-repeat;
+            background-size: contain;
+          }
+          &.star-empty{
+            background: url('https://static.souyidai.com/wap/2.0/images/star_empty@2x.png') center center no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+    }
+    .audit-panel-triangle{
+      @include size(0.37rem);
+      border-bottom:1px $border-dark solid;
+      border-right:1px $border-dark solid;
+      margin: 0 auto;
+      margin-bottom: -$margin-sm;
+      background-color: $white;
+      transform: rotate(45deg);
+    }
+  }
+  .bid-audit-conclude{
+    padding:0.8rem;
+    .audit-conclude-header{
+      width: 100%;
+      text-align: center;
+      font-weight: bold;
+      margin: 0;
+    }
+    .audit-conclude-content{
+      width: 6.4rem;
+      margin: 0;
+      margin-top: 0.25rem;
+      display: inline-block;
+    }
+    .audit-conclude-image{
+      width: 1.93rem;
+      height: 1.66rem;
+      float: right;
+    }
+  }
+}

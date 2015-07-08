@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>我的账户-资金明细</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:js scripts/flexible.js -->
+    <script src="scripts/flexible.js"></script>
+    <!-- endbuild -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+</head>
+<body class="wechat">
+    <ul class="tab-view tab-list wechat-tab">
+        <li >
+            <a href="{{base.bidId}}" >资金概览</a>
+        </li>
+        <li class="tab-active">
+            <a href="{{base.bidId}}" >资金明细</a>
+        </li>
+    </ul>
+    <!--资金明细-->
+    <div class="wechat-myac-details">
+        <!--投资-->
+        <section class="wechat-myac-row">
+            <span>
+                <strong>投资</strong>
+                <em>2014-11-10 12:36</em>
+            </span>
+            <span class="draw">
+                <strong>-950.00元</strong>
+                <em>余63.53元</em>
+            </span>
+        </section>
+        <!--投资end-->
+        <!--转让-->
+        <section class="wechat-myac-row">
+            <span>
+                <strong>转让</strong>
+                <em>2014-11-10 12:36</em>
+            </span>
+            <span class="included">
+                <strong>+670.46元</strong>
+                <em>余1,013.53元</em>
+            </span>
+        </section>
+        <!--转让end-->
+        <!--回款-->
+        <section class="wechat-myac-row">
+            <span>
+                <strong>回款</strong>
+                <em>2014-11-10 12:36</em>
+            </span>
+            <span class="included">
+                <strong>+33924.46元</strong>
+                <em>余1,013.53元</em>
+            </span>
+        </section>
+        <!--回款end-->
+        <!--取现-->
+        <section class="wechat-myac-row">
+            <span>
+                <strong>取现</strong>
+                <em>2014-11-10 12:36</em>
+            </span>
+            <span class="draw">
+                <strong>-950.00元</strong>
+                <em>余63.53元</em>
+            </span>
+        </section>
+        <!--取现end-->
+    </div>
+    <!--资金明细end-->
+    <!--底部-->
+    <div class="btn-bottom">
+        <section class="special_two_column">
+            <a href="####" class="border-right">充值</a>
+            <a href="####">取现</a>
+        </section>
+    </div>
+    <!--底部end-->
+</body>
+</html>

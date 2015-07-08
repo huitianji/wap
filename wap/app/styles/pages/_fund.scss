@@ -1,0 +1,48 @@
+// Name: Page fund
+//
+// Description: fund styles
+//
+// ============================================================================
+
+.fund-page{
+  padding: 0 $padding-base;
+  .redeem-money{
+    font-size: $font-xs;
+    color: $text-lighter;
+    margin: 0;
+    margin-top: $margin-xl;
+    span{
+      font-size: $font-lg;
+      color: $text-normal;
+      font-weight: bold;
+    }
+  }
+  .redeem-tip{
+    font-size: $font-xs;
+    color: $text-lighter;
+    margin-top: $margin-lg;
+  }
+}
+.bank-card{
+  border-bottom: 1px $border-dark solid;
+  border-top: 1px $border-dark solid;
+  padding: $padding-base;
+  background-color: #fff;
+  .bank-name{
+    margin: 0;
+    font-size: $font-xxl;
+    font-weight: bold;
+  }
+  .bank-logo{
+    @include size((44/$r) * 1rem);
+    margin-right: $margin-md;
+    position: relative;
+    top: 0.05rem;
+  }
+  .bank-num{
+    color: $text-light;
+    font-size: $font-xl;
+    margin: 0;
+    margin-left: 0.8rem;
+  }
+}

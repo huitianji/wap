@@ -1,0 +1,71 @@
+// Name: Icon
+//
+// Description: all icons
+//
+// ============================================================================
+
+.help-icon {
+  @include size((40/$r)*1rem);
+  margin-right: $margin-md;
+  display: inline-block;
+  background-size: contain;
+  vertical-align: -0.1rem;
+  background-repeat: no-repeat;
+  @for $i from 1 through 30 {
+    &.help-icon-#{$i} { background-image: url('https://static.souyidai.com/wap/2.0/images/help_icon/#{$i}.png'); }
+  }
+}
+.icon-warn{
+  @include size((20/$r)*1rem);
+  background-image: url('https://static.souyidai.com/wap/2.0/images/warn@2x.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-right: $margin-xs;
+}
+.icon-warn-blue{
+  @include size((20/$r)*1rem);
+  background-image: url('https://static.souyidai.com/wap/2.0/images/warn_blue@2x.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-left: $margin-xs;
+}
+.arrow{
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  font-size: 0;
+  display: inline-block;
+  margin-left: $margin-lg;
+  border-left: 0.2rem solid transparent;
+  border-right: 0.2rem solid transparent;
+  transition: all 0.3s ease;
+  &.up {
+    border-bottom: 0.2rem solid #cfcfcf;
+  }
+  &.down {
+    border-top: 0.2rem solid #cfcfcf;
+  }
+}
+.icon-25{
+  @include size((25/$r)*1rem);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-right: $margin-xs;
+  vertical-align: -0.05rem;
+}
+.icon-wechat-time{
+  background-image: url('../images/wechat/time@2x.png');
+}
+.icon-wechat-bao{
+  background-image: url('../images/wechat/bao@2x.png');
+}
+.icon-tip-blue{
+  @include size((100/$r)*1rem);
+  background-image: url('../images/wechat/tip_blue@2x.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  @include center();
+}

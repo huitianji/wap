@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>借款详情</title>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:js scripts/flexible.js -->
+  <script src="scripts/flexible.js"></script>
+  <!-- endbuild -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+<body>
+  <ul class="tab-view tab-list">
+    <li class="tab-active">
+      <a href="{{base.bidId}}" >借款详情</a>
+    </li>
+    <li>
+      <a href="{{base.bidId}}" >审核信息</a>
+    </li>
+    <li>
+      <a href="{{base.bidId}}" class="tab-border">投资记录</a>
+    </li>
+  </ul>
+  <div class="bid-header">
+    <p class="bid-rate">
+      <span class="bid-rate-num">12</span>% <span class="bid-rate-right"><span class="bid-spec tag orange">秒杀项目</span>年利率</span>
+    </p>
+    <div class="bid-progress">
+      <svg version="1.1" class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         width="100%" height="100%" viewBox="0 0 40 40"  xml:space="preserve">
+        <circle cx="20" cy="20" r="17" fill="none" stroke="#dfdfdf" stroke-width="2" id="circle"/>
+        <path d="" id="arc" fill="none" stroke="" stroke-width="2.2" data-end="360" data-start="0"/>
+      </svg>
+      <span class="percent">34%</span>
+      <span class="status">投资中</span>
+    </div>
+    <div class="bid-prop">
+      <div>{{key}}<br><span>{{value}}</span></div>
+    </div>
+  </div>
+  <div class="bid-info">
+    <div class="bid-info-list row">
+      <div class="block col-12">预约开始时间<span>2015年5月11日10:30</span></div>
+      <div class="block col-12">预约截止时间<span>2015年5月18日10:30</span></div>
+      <div class="block col-12">支付截止时间<span>2015年5月11日10:30</span></div>
+      <div class="block col-12">自动投资时间<span>2015年5月18日9:00-10:00</span></div>
+    </div>
+    <div class="bid-info-list row">
+      <div class="block col-12">最大可预约金额<span>3000,000,000.00元</span></div>
+      <div class="block col-12">剩余时间<span>71时01分18秒</span></div>
+    </div>
+    <div class="bid-info-items row">
+      <div class="bid-info-item col-6"><span class="icon icon-1yuan"></span>1000元起投</div>
+      <div class="bid-info-item col-6"><span class="icon icon-jinbi"></span>1000元整数倍</div>
+      <div class="bid-info-item col-6"><span class="icon icon-zhuanrang"></span>可提前赎回</div>
+      <div class="bid-info-item col-6"><span class="icon icon-jiari"></span>节假日正常还款</div>
+      <div class="bid-info-item col-6"><span class="icon icon-bili"></span>最大可投30%</div>
+    </div>
+  </div>
+  <a class="list-btn"><span class="icon icon-dun"></span>预约协议<span class="icon icon-chevron-right"></span></a>
+  <a class="list-btn single">杭州银泰城项目描述<span class="icon icon-chevron-right"></span></a>
+  <a class="list-btn">项目交易结构简介<span class="icon icon-chevron-right"></span></a>
+  <div class="bid-detail">
+    <div class="bid-detail-header">借款描述</div>
+    <div class="bid-detail-content">
+      <p class="content-title">中国银泰投资有限公司</p>
+      <p class="content-text">中国银泰投资有限公司（以下简称“银泰投资”） 成立于1985年6月，注册资本为人民币3亿元。作为“银泰系”投资及管理平台，银泰投资旗下包括银泰资源（SZ000975）及京投银泰（SH600683）两家上市公司。</p>
+      <p class="content-title">北京银泰置地商业有限公司</p>
+      <p class="content-text">北京银泰置地商业有限公司（以下简称“银泰置地”）成立于2010年6月，是一家以综合性商业地产开发、商用物业运营管理及物业服务为主营业务的商业地产集团公司，旗下有“银泰中心”、“银泰城”、“银泰MALL”三大产品线。主要负责管理商业地产项目。</p>
+    </div>
+  </div>
+  <div class="bid-detail">
+    <div class="bid-detail-header">购房信息</div>
+    <div class="bid-detail-column">
+      <div class="detail-column-line">
+        <span class="column-left">产品类型:</span><span class="column-right">租金保理</span>
+      </div>
+      <div class="detail-column-line">
+        <span class="column-left">资金用途:</span><span class="column-right">用于补充“杭州城西银泰城”项目运营流动性</span>
+      </div>
+      <div class="detail-column-line">
+        <span class="column-left">还款来源:</span><span class="column-right">第一还款来源：杭州城西银泰城承租商铺的全部租金收入
+        <br>第二还款来源：杭州城西银泰城项目公司偿还
+        <br>第三还款来源：杭州城西银泰城项目公司的母公司代为偿还</span>
+      </div>
+    </div>
+  </div>
+  <p class="invest-result-tip no-border-bottom"><i class="icon-warn"></i>若在预约金额支付截止时间之前未支付剩余预约金额，则视为您主动 放弃预约，已支付定金将不予返还。</p>
+  <div class="bid-tips">
+    说明: <br>欲查看"债权匹配记录", 请您用电脑登录www.souyidai.com, button在定期宝原项目中查看详情
+  </div>
+  <div class="btn-bottom"><span class="cal"></span><div class="text">投资</div></div>
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/zepto/zepto.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+  <!-- build:js scripts/util.js -->
+  <script src="scripts/util.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

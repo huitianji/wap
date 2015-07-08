@@ -1,0 +1,46 @@
+// Name: Main
+//
+// Description: main
+//
+// ============================================================================
+
+// utils
+@import 'utils/variables';
+@import 'utils/mixins';
+
+//base
+@import 'base/base';
+@import 'base/normalize';
+@import 'base/typography';
+
+//layout
+@import 'layout/grid';
+@import 'layout/link';
+@import 'layout/button';
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/form';
+@import 'layout/dialog';
+
+//components
+@import 'components/icon';
+@import 'components/tab';
+@import 'components/tag';
+@import 'components/slide_bar';
+@import 'components/toast';
+@import 'components/tab_select';
+
+//pages
+@import 'pages/bid_detail';
+@import 'pages/bid_verify';
+@import 'pages/bid_invest_log';
+@import 'pages/help_center';
+@import 'pages/wechat';
+@import 'pages/take_cash';
+@import 'pages/bid_invest';
+@import 'pages/security';
+@import 'pages/guide';
+@import 'pages/fund';
+@import 'pages/account';
+//
+@import "pages/wechat_myaccount";

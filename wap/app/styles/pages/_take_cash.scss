@@ -1,0 +1,43 @@
+// Name: Page take cash
+//
+// Description: take cash styles
+//
+// ============================================================================
+
+.take-cash-img {
+  @include size(1.33rem);
+  @include center;
+  margin-top: 1.33rem;
+  margin-bottom: $margin-md;
+}
+.take-cash-title {
+  font-size: $font-xxl;
+  margin: 0;
+}
+.take-cash-sub-title {
+  font-size: $font-sm;
+  color: $text-lighter;
+  margin: 0;
+  margin-bottom: $margin-lg;
+}
+.take-cash-list{
+  padding: $padding-lg $padding-base;
+  background-color: $white;
+  border-top: 1px $border-dark solid;
+  border-bottom: 1px $border-dark solid;
+  .list-item{
+    color: $text-lighter;
+    padding: $padding-xs 0;
+    span{
+      float: right;
+      color: $text-normal;
+      font-size: $font-lg;
+      font-weight: bold;
+    }
+  }
+}
+.take-cash-tip{
+  margin: 0;
+  margin-top: $margin-xs;
+  padding: 0 $padding-base;
+}

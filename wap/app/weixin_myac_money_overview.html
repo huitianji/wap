@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>我的账户-资金概览</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:js scripts/flexible.js -->
+    <script src="scripts/flexible.js"></script>
+    <!-- endbuild -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+</head>
+<body class="wechat">
+    <ul class="tab-view tab-list wechat-tab">
+        <li class="tab-active">
+            <a href="{{base.bidId}}" >资金概览</a>
+        </li>
+        <li>
+            <a href="{{base.bidId}}" >资金明细</a>
+        </li>
+    </ul>
+    <!--当前资产列表-->
+    <div class="wechat-myac-aslist">
+        <span class="wechat-myac-samlltit">当前资产价值</span>
+        <div class="wechat-myac-column">
+            <span>
+                <strong>0.04元</strong>
+                <em>可用余额</em>
+            </span>
+            <span>
+                <strong>500.004元</strong>
+                <em>冻结金额</em>
+            </span>
+            <span>
+                <strong>3654.00元</strong>
+                <em>待收本金</em>
+            </span>
+        </div>
+        <span class="wechat-myac-total">
+            <strong>3654.00元</strong>
+            <em>合计</em>
+        </span>
+    </div>
+    <!--当前资产列表-end-->
+    <!--底部-->
+    <div class="btn-bottom">
+        <section class="special_two_column">
+            <a href="####" class="border-right">充值</a>
+            <a href="####">取现</a>
+        </section>
+    </div>
+    <!--底部end-->
+</body>
+</html>

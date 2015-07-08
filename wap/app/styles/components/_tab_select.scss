@@ -1,0 +1,55 @@
+// Name: Tab Select
+//
+// Description: Tab Select menu
+//
+// ============================================================================
+
+.tab-select {
+  width: 100%;
+  background-color: $white;
+  font-size: $font-lg;
+  position: relative;
+  z-index: 10;
+  &.tab-select-fixed{
+    position:fixed;
+    top: 0;
+  }
+  .tab-select-menu{
+    width: 100%;
+    display: flex;
+    padding: $padding-base;
+    justify-content: space-between;
+    border-bottom: 1px $border-dark solid;
+    z-index: 10;
+  }
+  .tab-select-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: $padding-sm $padding-base;
+    display: none;
+    .select-list-item{
+      color: $text-light;
+      border: 1px $border-dark solid;
+      width: 2.4rem;
+      padding: $padding-xs $padding-base;
+      text-align: center;
+      border-radius: $border-radius;
+      transition: all 0.3s ease;
+      &.active{
+        color: $global-main;
+        border: 1px $global-main solid;
+      }
+    }
+  }
+}
+.tab-select-overlay{
+  position: fixed;
+  top: -5rem;
+  bottom: -5rem;
+  left: -5rem;
+  right: -5rem;
+  background-color: rgba(0,0,0,0.6);
+  display: none;
+  z-index: 2;
+}

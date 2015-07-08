@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>微信首页</title>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:js scripts/flexible.js -->
+  <script src="scripts/flexible.js"></script>
+  <!-- endbuild -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+<body class="wechat">
+  <ul class="tab-view tab-list wechat-tab">
+    <li class="tab-active">
+      <a href="{{base.bidId}}" >新手专享</a>
+    </li>
+    <li>
+      <a href="{{base.bidId}}" >更多项目</a>
+    </li>
+    <li>
+      <a href="{{base.bidId}}" >邀请好友</a>
+    </li>
+  </ul>
+  <div class="wechat-index-silde">
+    <div class="wechat-index-list">
+      <div class="wechat-index-card">
+        <p class="wechat-card-corner">即将开始</p>
+        <p class="wechat-bid-rate" >新手专享年化收益率<br><span>9.88</span> %</p>
+        <span class="wechat-bid-time pre"><i class="icon-wechat-time icon-25"></i>03时26分30秒后可以投资</span>
+        <div class="wechat-bid-info">
+          <p>期限<br><span>30天</span></p>
+          <p>还款方式<br><span>一次结清</span></p>
+        </div>
+        <div class="wechat-bid-footer">
+          <i class="icon-wechat-bao icon-25"></i>金融联贷本息保障,借款人房屋,车辆抵押
+        </div>
+      </div>
+      <div class="wechat-index-card">
+        <p class="wechat-bid-rate" >新手专享年化收益率<br><span>9.88</span> %</p>
+        <span class="wechat-bid-time"><i class="icon-wechat-time icon-25"></i>剩03时26分30秒</span>
+        <div class="wechat-bid-info">
+          <p>期限<br><span>30天</span></p>
+          <p>还款方式<br><span>一次结清</span></p>
+        </div>
+        <div class="wechat-bid-footer">
+          <i class="icon-wechat-bao icon-25"></i>金融联贷本息保障,借款人房屋,车辆抵押
+        </div>
+      </div>
+      <div class="wechat-index-card">
+        <p class="wechat-card-corner end">售罄</p>
+        <p class="wechat-bid-rate" >新手专享年化收益率<br><span>9.88</span> %</p>
+        <span class="wechat-bid-time end"><i class="icon-wechat-time icon-25"></i>预计下次发布时间2015-03-17 10:30</span>
+        <div class="wechat-bid-info">
+          <p>期限<br><span>30天</span></p>
+          <p>还款方式<br><span>一次结清</span></p>
+        </div>
+        <div class="wechat-bid-footer">
+          <i class="icon-wechat-bao icon-25"></i>金融联贷本息保障,借款人房屋,车辆抵押
+        </div>
+      </div>
+      <div class="wechat-index-card">
+        <p class="wechat-bid-rate" >新手专享年化收益率<br><span>9.88</span> %</p>
+        <span class="wechat-bid-time"><i class="icon-wechat-time icon-25"></i>剩03时26分30秒</span>
+        <div class="wechat-bid-info">
+          <p>期限<br><span>30天</span></p>
+          <p>还款方式<br><span>一次结清</span></p>
+        </div>
+        <div class="wechat-bid-footer">
+          <i class="icon-wechat-bao icon-25"></i>金融联贷本息保障,借款人房屋,车辆抵押
+        </div>
+        <div class="wechat-has-invest"><span>已投资</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-dot">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <p class="wechat-balance">可用余额: 0.00元</p>
+  <div class="btn-box">
+    <button class="btn btn-second">充值</button>
+    <button class="btn btn-default">立即投资</button>
+  </div>
+  <div class="btn-box">
+    <button class="btn btn-default">靠谱项目 岂容错过？分享给Ta</button>
+  </div>
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/zepto/zepto.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+  <!-- build:js scripts/util.js -->
+  <script src="scripts/util.js"></script>
+  <!-- endbuild -->
+  <!-- build:js scripts/slide.js -->
+  <script src="scripts/slide.js"></script>
+  <!-- endbuild -->
+  <script>
+  $('.wechat-index-silde').swipeSlide({
+    ul: $('.wechat-index-list'),
+    li: $('.wechat-index-card'),
+    autoSwipe : false,
+    continuousScroll:true,
+    callback: function(i){
+      $('.slide-dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
+    }
+  });
+  </script>
+</body>
+</html>

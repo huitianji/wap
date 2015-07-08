@@ -1,0 +1,51 @@
+// Name: Page bid_invest_log
+//
+// Description: bid_invest_log styles
+//
+// ============================================================================
+
+.bid-history{
+  background-color:$white;
+  border-bottom: 1px $border-dark solid;
+  .bid-history-header{
+    border-bottom: 1px $border-light solid;
+    color: $text-normal;
+    font-weight: bold;
+    padding:$padding-base;
+    font-size: $font-md;
+  }
+  .bid-history-list{
+    margin: 0;
+    padding:0 $padding-base;
+    list-style: none;
+    .bid-history-item{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding:$padding-md 0;
+      font-size:$font-lg;
+      color: $text-normal;
+      text-align: right;
+      .medal{
+        @include size(0.4rem);
+        display: inline-block;
+        margin-left: $margin-xs;
+        vertical-align: -0.03rem;
+        background: url('https://static.souyidai.com/wap/2.0/images/medal@2x.png') center center no-repeat;
+        background-size: contain;
+      }
+      .myinvest{
+        @include size(1.22rem,0.42rem);
+        display: inline-block;
+        margin-left: $margin-xs;
+        vertical-align: -0.03rem;
+        background: url('https://static.souyidai.com/wap/2.0/images/myinvest@2x.png') center center no-repeat;
+        background-size: contain;
+      }
+      .history-item-tiem{
+        color: $text-lighter;
+        font-size: $font-xs;
+      }
+    }
+  }
+}

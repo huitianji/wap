@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>更多项目</title>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:js scripts/flexible.js -->
+  <script src="scripts/flexible.js"></script>
+  <!-- endbuild -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+<body class="wechat">
+  <ul class="tab-view tab-list wechat-tab">
+    <li>
+      <a href="{{base.bidId}}" >新手专享</a>
+    </li>
+    <li class="tab-active">
+      <a href="{{base.bidId}}" >更多项目</a>
+    </li>
+    <li>
+      <a href="{{base.bidId}}" >邀请好友</a>
+    </li>
+  </ul>
+  <div class="wechat-index-silde">
+    <div class="wechat-index-list">
+      <div class="wechat-index-card">
+        <span class="wechat-bid-tag">信易贷</span>
+        <p class="wechat-bid-rate" >年化收益率<br><span>13</span> %</p>
+        <div class="wechat-bid-info">
+          <p>期限<br><span>12个月</span></p>
+          <p>还款方式<br><span>等额本息</span></p>
+        </div>
+        <div class="wechat-bid-footer">
+          <i class="icon-wechat-bao icon-25"></i>金融联贷本息保障,借款人房屋,车辆抵押
+        </div>
+      </div>
+      <div class="wechat-index-card">
+        <span class="wechat-bid-tag">车易贷</span>
+        <p class="wechat-bid-rate" >年化收益率<br><span>10.5</span> %</p>
+        <div class="wechat-bid-info">
+          <p>期限<br><span>6个月</span></p>
+          <p>还款方式<br><span>先息后本</span></p>
+        </div>
+        <div class="wechat-bid-footer">
+          <i class="icon-wechat-bao icon-25"></i>金融联贷本息保障,借款人房屋,车辆抵押
+        </div>
+      </div>
+      <div class="wechat-index-card">
+        <span class="wechat-bid-tag">房易贷</span>
+        <p class="wechat-bid-rate" >年化收益率<br><span>9.5+0.3</span> %</p>
+        <div class="wechat-bid-info">
+          <p>期限<br><span>30天</span></p>
+          <p>还款方式<br><span>一次结清</span></p>
+        </div>
+        <div class="wechat-bid-footer">
+          <i class="icon-wechat-bao icon-25"></i>金融联贷本息保障,借款人房屋,车辆抵押
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-dot">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <p class="wechat-coupon-tip">您的账户共有投资红包60元<span class="coupon-tip-triangle"></span></p>
+  <div class="btn-box">
+    <button class="btn btn-default">下载APP即可投资</button>
+  </div>
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/zepto/zepto.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+  <!-- build:js scripts/util.js -->
+  <script src="scripts/util.js"></script>
+  <!-- endbuild -->
+  <!-- build:js scripts/slide.js -->
+  <script src="scripts/slide.js"></script>
+  <!-- endbuild -->
+  <script>
+  $('.wechat-index-silde').swipeSlide({
+    ul: $('.wechat-index-list'),
+    li: $('.wechat-index-card'),
+    autoSwipe : false,
+    continuousScroll:true,
+    callback: function(i){
+      $('.slide-dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
+    }
+  });
+  </script>
+</body>
+</html>

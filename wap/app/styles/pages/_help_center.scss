@@ -1,0 +1,45 @@
+// Name: Page help_center
+//
+// Description: help_center styles
+//
+// ============================================================================
+
+.help-banner{
+  width: 100%;
+  vertical-align: middle;
+}
+.help-grid-header{
+  margin: 0;
+  padding: $padding-base;
+  padding-bottom: $padding-sm;
+  color: $text-light;
+}
+.help-grid{
+  border-bottom: 1px $border-dark solid;
+  border-top: 1px $border-dark solid;
+  background-color:$white;
+  .list-btn{
+    border-bottom:none;
+    &:not(:last-child){
+      border-bottom: 1px $border-light solid;
+    }
+    span{
+      float: right;
+      color: $text-lighter;
+    }
+  }
+  .help-row{
+    padding: $padding-sm 0;
+    &:not(:last-child){
+      border-bottom: 1px $border-light solid;
+    }
+    .help-row-item{
+      padding: $padding-sm $padding-base;
+      font-size:$font-lg;
+      color: $text-normal;
+      &:last-child{
+        border-left: 1px $border-light solid;
+      }
+    }
+  }
+}

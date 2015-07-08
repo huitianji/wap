@@ -1,0 +1,64 @@
+// Name: Tab
+//
+// Description: Tab menu
+//
+// ============================================================================
+
+.tab-view {
+  width: 100%;
+  display: flex;
+  background-color: $white;
+  &.tab-fixed{
+    position:fixed;
+    z-index: 10;
+    top: 0;
+    .tab-active{
+      background-color:$gray;
+      border-bottom: 1px $border-dark solid;
+    }
+  }
+}
+.tab-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+  height: 1.2rem;
+  .tab-active {
+    border-bottom: none;
+    background-color:$white;
+    border-right: 1px $border-dark solid;
+    border-left: 1px $border-dark solid;
+    a {
+      color: $global-main;
+    }
+  }
+}
+.tab-view li {
+  float: none;
+  flex: 1;
+  border-bottom: 1px $border-dark solid;
+  background-color:$gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  a {
+    text-align: center;
+    color: $text-lighter;
+    font-size: $font-lg;
+    width: 100%;
+  }
+  .tab-border{
+  }
+}
+.wechat-tab{
+  li{
+    background-color: $white;
+    &.tab-active{
+      border-bottom: 1px $global-main solid;
+      border-left: none;
+      border-right: none;
+    }
+  }
+}

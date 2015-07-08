@@ -1,0 +1,66 @@
+// Name: Page Security
+//
+// Description: Security styles
+//
+// ============================================================================
+
+.security-page{
+  background-image: linear-gradient(to bottom, #55a1e3, #e3f1ff 10rem);
+  padding-top:$padding-xl;
+  padding-bottom:$padding-base;
+  position: relative;
+  .security-img{
+    width: 8.13rem;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    display: block;
+  }
+  .security-line{
+    width: (679/$r) * 1rem;
+    position: relative;
+    top: -0.95rem;
+    z-index: 0;
+  }
+  .security-item{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    &.right{
+      .security-icon{
+        float: right;
+        margin-right: $margin-md;
+      }
+      .security-text{
+        text-align: left;
+      }
+    }
+    &.left{
+      .security-icon{
+        float: left;
+        margin-left: $margin-md;
+      }
+      .security-text{
+        text-align: right;
+      }
+    }
+    .security-item-img{
+      flex: 1;
+      .security-icon{
+        width: (200/$r) * 1rem;
+      }
+    }
+    .security-text{
+      flex: 1;
+      padding-top: $padding-xs;
+      color: $text-normal;
+      font-size: $font-xs;
+      .security-title{
+        margin:0;
+        font-size: $font-xxl;
+        color: $global-main;
+      }
+    }
+  }
+}
